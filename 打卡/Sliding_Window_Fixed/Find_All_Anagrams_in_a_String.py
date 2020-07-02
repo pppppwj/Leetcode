@@ -5,7 +5,6 @@ class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         res = []
         p_counter = {}
-        missing = len(p)
         for i in range(len(p)):
             if p[i] in p_counter:
                 p_counter[p[i]] += 1
